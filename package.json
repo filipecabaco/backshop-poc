@@ -8,6 +8,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "react-scripts-ts": "2.13.0",
+    "react-syntax-highlight": "^15.3.1",
     "redux": "^3.7.2"
   },
   "scripts": {

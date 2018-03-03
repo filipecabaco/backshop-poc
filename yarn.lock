@@ -2477,6 +2477,10 @@ he@1.1.x:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
+highlight.js@^9.12.0:
+  version "9.12.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -4695,7 +4699,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.6.0:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -4902,6 +4906,13 @@ react-scripts-ts@2.13.0:
     whatwg-fetch "2.0.3"
   optionalDependencies:
     fsevents "1.1.2"
+
+react-syntax-highlight@^15.3.1:
+  version "15.3.1"
+  resolved "https://registry.yarnpkg.com/react-syntax-highlight/-/react-syntax-highlight-15.3.1.tgz#b44f6f77e2783e8f74c4b30b50d5a886cc35fc1f"
+  dependencies:
+    highlight.js "^9.12.0"
+    prop-types "^15.5.10"
 
 react@^16.2.0:
   version "16.2.0"
