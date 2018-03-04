@@ -39,11 +39,8 @@ user=> (def sum #(+ %1 %2))
 user=> (map #(inc %1) [1 2 3 4])
 `
 const intro = `
-Functions are first class citizens
-
 **TL DR: **You could create functions using defn or simply using fn`
-export function Defn(): JSX.Element {
-
+export function Functions(): JSX.Element {
   return (
     <div>
     <ReactMarkdown source={intro}/>

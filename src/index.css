@@ -2,3 +2,8 @@
 html{
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
+
+.subTitle {
+  font-size: 1em;
+  color: #999;
+}
