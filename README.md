@@ -121,7 +121,7 @@ We are always open to [your feedback](https://github.com/facebookincubator/creat
 After creation, your project should look like this:
 
 ```
-my-app/
+ backshop/
   README.md
   node_modules/
   package.json
@@ -283,7 +283,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1792,7 +1792,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -1916,7 +1916,7 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 Open your `package.json` and add a `homepage` field:
 
 ```js
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://myusername.github.io/ backshop",
 ```
 
 Create React App uses the `homepage` field to determine the root URL in the built HTML file.
@@ -1925,7 +1925,7 @@ Create React App uses the `homepage` field to determine the root URL in the buil
 
 Now, whenever you run `npm run build`, you will see a cheat sheet with instructions on how to deploy to GitHub Pages.
 
-To publish it at [https://myusername.github.io/my-app](https://myusername.github.io/my-app), run:
+To publish it at [https://myusername.github.io/ backshop](https://myusername.github.io/ backshop), run:
 
 ```sh
 npm install --save gh-pages

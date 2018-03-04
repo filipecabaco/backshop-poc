@@ -1,4 +1,6 @@
 import * as React from 'react'
+import './Code.css'
+const ReactMarkdown = require('react-markdown')
 const Highlight = require('react-syntax-highlight')
 
 const code = `
@@ -36,15 +38,16 @@ user=> (def sum #(+ %1 %2))
 ; shorthand for (fn [a] (inc a)) => #(inc %1)
 user=> (map #(inc %1) [1 2 3 4])
 `
+const intro = `
+Functions are first class citizens
 
+**TL DR: **You could create functions using defn or simply using fn`
 export function Defn(): JSX.Element {
-  return (
-    <div id="defn">
-      <h2>functions</h2>
-      <p> functions are first class citizens </p>
 
-      <h4> tldr; </h4>
-      <p> you could create functions using defn or simply using fn </p>
-      <Highlight lang={'clojure'} value={code}/>
-    </div>
-  )}
+  return (
+    <div>
+    <ReactMarkdown source={intro}/>
+    <Highlight lang={'clojure'} value={code}/>
+   </div>
+  )
+}

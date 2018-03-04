@@ -7,7 +7,7 @@ export interface ChangeSection {
   section?: Section
 }
 
-export type MenuAction = ChangeSection
+export type SectionAction = ChangeSection
 
 export function changeSection(section: Section): ChangeSection {
   return { type: CHANGE_SECTION, section }

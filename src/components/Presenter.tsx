@@ -11,7 +11,7 @@ class Presenter extends React.Component<PresenterProps> {
   render() {
     return (
       <div>
-        {this.props.section && this.props.section.title}
+        <h1>{this.props.section && this.props.section.title}</h1>
         {this.props.section && this.props.section.content}
       </div>
       )
