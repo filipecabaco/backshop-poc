@@ -1,25 +1,25 @@
-import { Functions } from './Functions'
-import { Leinigen } from './Leinigen'
-import { Repl } from './Repl'
+import { functions } from './Functions'
+import { leinigen } from './Leinigen'
+import { repl } from './Repl'
 import { Def } from './Def'
-import { Namespace } from './Namespace'
+import { namespace } from './Namespace'
 
 export interface Section {
   title: string,
   subTitle: string,
-  content: JSX.Element
+  content: string
 }
 
 export const LeinigenSection: Section = {
   title: 'Leinegen',
   subTitle: 'declarative configuration and project automation made simple',
-  content: Leinigen()
+  content: leinigen
 }
 
 export const ReplSection: Section = {
   title: 'Repl',
   subTitle: 'read-evaluate-print-loop will empower your development experience',
-  content: Repl()
+  content: repl
 }
 
 export const DefSection: Section = {
@@ -31,13 +31,13 @@ export const DefSection: Section = {
 export const FunctionsSection: Section = {
   title: 'Functions',
   subTitle: 'functions are first class citizens',
-  content: Functions()
+  content: functions
 }
 
 export const NamespaceSection: Section = {
   title: 'Namespace',
   subTitle: 'modularizing your app',
-  content: Namespace()
+  content: namespace
 }
 
 export function allSections () {

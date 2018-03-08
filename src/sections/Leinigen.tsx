@@ -1,8 +1,5 @@
-import * as React from 'react'
-import './Code.css'
-const Highlight = require('react-syntax-highlight')
-
-const code = `
+export const leinigen: string = `
+\`\`\` bash
 # install leinigen
 $ brew install leinigen
 
@@ -17,9 +14,5 @@ $ lein repl
 
 # all commands
 $ lein
+\`\`\`
 `
-
-export function Leinigen(): JSX.Element {
-  return (
-    <Highlight lang={'bash'} value={code}/>
-  )}
