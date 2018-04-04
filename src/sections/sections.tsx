@@ -1,7 +1,8 @@
-import { functions } from './Functions'
 import { leinigen } from './Leinigen'
 import { repl } from './Repl'
-import { Def } from './Def'
+import { def } from './Def'
+import { defn } from './Defn'
+import { ifElse } from './IfElse'
 import { namespace } from './Namespace'
 
 export interface Section {
@@ -24,19 +25,24 @@ export const ReplSection: Section = {
 
 export const DefSection: Section = {
   title: 'Def',
-  subTitle: `bind values to names -> 'variables'`,
-  content: Def()
+  subTitle: 'bind values to names -> "variables"',
+  content: def
+}
+export const DefnSection: Section = {
+  title: 'Defn',
+  subTitle: 'functions are first class citizens',
+  content: defn
 }
 
-export const FunctionsSection: Section = {
-  title: 'Functions',
-  subTitle: 'functions are first class citizens',
-  content: functions
+export const IfElseSection: Section = {
+  title: 'If - Else',
+  subTitle: 'some people will say if-else are useless',
+  content: ifElse
 }
 
 export const NamespaceSection: Section = {
   title: 'Namespace',
-  subTitle: 'modularizing your app',
+  subTitle: 'your clojure runtime it is nothing than a set of namespaces talking with each other',
   content: namespace
 }
 
@@ -45,7 +51,8 @@ export function allSections () {
      LeinigenSection,
      ReplSection,
      DefSection,
-     FunctionsSection,
+     DefnSection,
+     IfElseSection,
      NamespaceSection
     ]
 }

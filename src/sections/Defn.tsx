@@ -1,5 +1,4 @@
-export const functions: string = `
-**TL DR: **You could create functions using defn or simply using fn
+export const defn: string = `
 \`\`\` clojure-repl
 ;; the easy way to create a function is with fn
 user=> (fn [a b] (+ a b))

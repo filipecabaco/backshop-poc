@@ -1,5 +1,6 @@
 export const repl: string =  `
 \`\`\` clojure-repl
+$ lein repl
 ;; you can type all clojure commands and get the feedback immediately
 backshop.core=> (+ 1 2)
 3
